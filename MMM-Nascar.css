@@ -1,0 +1,16 @@
+
+.MMM-Nascar .header {
+	text-align: center;
+}
+.MMM-Nascar .title {
+	text-align: center;
+}
+.MMM-Nascar .content {
+  width: 100%;
+  background-position: 11px 0;
+  background-repeat: no-repeat;
+  color: #fe0127;
+}
+.MMM-Nascar .wrapper {
+	text-align: justify
+}

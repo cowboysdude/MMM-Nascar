@@ -1,0 +1,22 @@
+{
+  "name": "mmm-nascar",
+  "version": "1.0.0",
+  "description": "This day in History module for MM2",
+  "main": "MMM-History.js",
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cowboysdude/MMM-History.git"
+  },
+  "author": "Cowboysdude",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cowboysdude/MMM-Nascar/issues"
+  },
+  "homepage": "https://github.com/cowboysdude/MMM-Nascar#readme"
+}
