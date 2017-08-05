@@ -2,7 +2,7 @@
   "name": "mmm-nascar",
   "version": "1.0.0",
   "description": "This day in History module for MM2",
-  "main": "MMM-History.js",
+  "main": "MMM-Nascar.js",
   "dependencies": {
     "request": "^2.81.0"
   },
