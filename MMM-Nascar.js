@@ -179,81 +179,76 @@ Module.register("MMM-Nascar", {
            
             var locationRow = document.createElement("tr");
             
-            var dposition = document.createElement("th");
-			dposition.setAttribute("colspan", 1);
+            var dposition = document.createElement("th"); 
 			dposition.classList.add("xsmall","bright");
 			dposition.innerHTML = "Position";
 			locationRow.appendChild(dposition);
 			nascarTable.appendChild(locationRow);
 			
-			var driver = document.createElement("th");
-			driver.setAttribute("colspan", 1);
+			var driver = document.createElement("th"); 
 			driver.classList.add("xsmall","bright");
 			driver.innerHTML = "Driver";
 			locationRow.appendChild(driver);
 			nascarTable.appendChild(locationRow);
 
-	        var Tpoints = document.createElement("th");
-			Tpoints.setAttribute("colspan", 1);
+	        var Tpoints = document.createElement("th"); 
 			Tpoints.classList.add("xsmall","bright");
 			Tpoints.innerHTML = "Points";
 			locationRow.appendChild(Tpoints);
 			nascarTable.appendChild(locationRow);
 
-			var playpoints = document.createElement("th");
-			playpoints.setAttribute("colspan", 1);
+			var playpoints = document.createElement("th"); 
 			playpoints.classList.add("xsmall","bright");
 			playpoints.innerHTML = "Playoff PTS";
 			locationRow.appendChild(playpoints);
 			nascarTable.appendChild(locationRow);
 			
-			var playrank = document.createElement("th");
-			playrank.setAttribute("colspan", 1);
+			var playrank = document.createElement("th"); 
 			playrank.classList.add("xsmall","bright");
 			playrank.innerHTML = "Playoff Rank";
 			locationRow.appendChild(playrank);
 			nascarTable.appendChild(locationRow);
 			
-			var bonusPTS = document.createElement("th");
-			bonusPTS.setAttribute("colspan", 1);
+			var bonusPTS = document.createElement("th"); 
 			bonusPTS.classList.add("xsmall","bright");
 			bonusPTS.innerHTML = "Bonus PTS";
 			locationRow.appendChild(bonusPTS);
 			nascarTable.appendChild(locationRow);
 			
-			var starts = document.createElement("th");
-			starts.setAttribute("colspan", 1);
+			var starts = document.createElement("th"); 
 			starts.classList.add("xsmall","bright");
 			starts.innerHTML = "Starts";
 			locationRow.appendChild(starts);
 			nascarTable.appendChild(locationRow);
 			
-			var wins = document.createElement("th");
-			wins.setAttribute("colspan", 1);
+			var wins = document.createElement("th"); 
 			wins.classList.add("xsmall","bright");
 			wins.innerHTML = "Wins";
 			locationRow.appendChild(wins);
 			nascarTable.appendChild(locationRow);
 			
-			var top5wins = document.createElement("th");
-			top5wins.setAttribute("colspan", 1);
+			var top5wins = document.createElement("th"); 
 			top5wins.classList.add("xsmall","bright");
 			top5wins.innerHTML = "Top 5 Wins";
 			locationRow.appendChild(top5wins);
 			nascarTable.appendChild(locationRow);
 			
-			var top10wins = document.createElement("th");
-			top10wins.setAttribute("colspan", 1);
+			var top10wins = document.createElement("th"); 
 			top10wins.classList.add("xsmall","bright");
 			top10wins.innerHTML = "Top 10 Wins";
 			locationRow.appendChild(top10wins);
 			nascarTable.appendChild(locationRow);
 			
-			var nfinish = document.createElement("th");
-			nfinish.setAttribute("colspan", 1);
+			var nfinish = document.createElement("th"); 
 			nfinish.classList.add("xsmall","bright");
 			nfinish.innerHTML = "DNF";
 			locationRow.appendChild(nfinish);
+			nascarTable.appendChild(locationRow);
+			
+			var npoles = document.createElement("th"); 
+			npoles.classList.add("xsmall","bright");
+			npoles.innerHTML = "Poles";
+			locationRow.appendChild(npoles);
 			nascarTable.appendChild(locationRow);
 			
 			
@@ -332,6 +327,12 @@ Module.register("MMM-Nascar", {
 			dNotF.classList.add("xsmall","bright");
 	        dNotF.innerHTML = nascar.dnf;	
 			row.appendChild(dNotF);
+			nascarTable.appendChild(row);
+			
+			var dpole = document.createElement("td");
+			dpole.classList.add("xsmall","bright");
+	        dpole.innerHTML = nascar.poles;	
+			row.appendChild(dpole);
 			nascarTable.appendChild(row);
            
 			}
