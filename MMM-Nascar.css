@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Muli:600');
 .MMM-Nascar .header {
 	text-align: center;
 }
@@ -13,4 +13,12 @@
 }
 .MMM-Nascar .wrapper {
 	text-align: justify
-} 
+}
+.MMM-Nascar th {
+	color: #A1E9F8;
+	font-family: Muli;
+}
+.MMM-Nascar td {
+	font-weight: bold;
+	font-family: Muli;
+}
