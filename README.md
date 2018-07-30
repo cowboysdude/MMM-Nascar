@@ -1,7 +1,7 @@
 # MMM-Nascar
 Nascar leader board module for MM2
 
-![alt tag](Capture1.PNG)
+![alt tag](Capture2.PNG)
 
 Nascar leaderboard for MagicMirror
 
