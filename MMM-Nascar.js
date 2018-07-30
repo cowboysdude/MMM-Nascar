@@ -247,7 +247,7 @@ Module.register("MMM-Nascar", {
 			
 			var npoles = document.createElement("th"); 
 			npoles.classList.add("xsmall","bright");
-			npoles.innerHTML = "Poles";
+			npoles.innerHTML = "Pole";
 			locationRow.appendChild(npoles);
 			nascarTable.appendChild(locationRow);
 			
