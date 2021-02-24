@@ -100,7 +100,6 @@ Module.register("MMM-Nascar", {
            requiresVersion: "2.1.1",
            
            // Set locale.
-           this.url = "http://www.nascar.com/cacher/2017/1/points-feed.json";
            this.nascar = {};
            this.today = "";
            this.activeItem = 0;
@@ -130,7 +129,7 @@ Module.register("MMM-Nascar", {
      },
 
      getNascar: function() {
-         this.sendSocketNotification('GET_NASCAR', this.url);
+         this.sendSocketNotification('GET_NASCAR');
      },
 
      socketNotificationReceived: function(notification, payload) {
@@ -337,7 +336,5 @@ Module.register("MMM-Nascar", {
            
 			}
 			return wrapper;
-			},
-     
-     
+			}, 
  });
