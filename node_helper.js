@@ -6,6 +6,7 @@
     */
 const NodeHelper = require('node_helper');
 const request = require('request');
+const moment = require('moment');
 
 
 module.exports = NodeHelper.create({
@@ -15,14 +16,15 @@ module.exports = NodeHelper.create({
     },
     
     getNascar: function(url) {
-        request({
-            url: url,
+		var year =  moment().format('YYYY'); 
+        
+		request({
+            url: "http://www.nascar.com/cacher/"+year+"/1/points-feed.json",
             method: 'GET'
         }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
                 var result = JSON.parse(body);
-                this.sendSocketNotification('NASCAR_RESULT', result);
-                
+                this.sendSocketNotification('NASCAR_RESULT', result); 
             }
         });
     },
