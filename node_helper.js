@@ -19,7 +19,7 @@ module.exports = NodeHelper.create({
 		var year =  moment().format('YYYY'); 
         
 		request({
-            url: "http://www.nascar.com/cacher/"+year+"/1/points-feed.json",
+            url: "https://cf.nascar.com/cacher/"+year+"/1/final/1-drivers-points.json",
             method: 'GET'
         }, (error, response, body) => {
             if (!error && response.statusCode == 200) {
